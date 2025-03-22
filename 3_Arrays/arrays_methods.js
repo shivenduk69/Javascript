@@ -18,3 +18,8 @@ console.log(brr);
 //reverse
 arr.reverse();
 console.log(arr);
+
+//searching index
+
+let idx = arr.indexOf(true);
+console.log(idx);
