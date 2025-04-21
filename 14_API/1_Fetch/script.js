@@ -1,5 +1,6 @@
 let btn = document.querySelector('.btn');
 
+let div = document.querySelector('div');
 btn.addEventListener('click', throttling((ev)=>{
 
     fetch('https://extinct-api.herokuapp.com/api/v1/animal/')
@@ -8,8 +9,7 @@ btn.addEventListener('click', throttling((ev)=>{
         })
         .then((res)=>{
             console.log(res);
-            // res.forEach((data)=>{
-            //     console.log(data.text);
-            // })
+            div.innerText = res;
+            
         })
 }, 2000));
