@@ -1,9 +1,6 @@
-//Reduce method
-
-//it returns a single value from an array
-let brr = [1,2,3,4,5];
-let arr = brr.reduce((a, b)=>{
-    return a<b ? b : a;
+let arr = [1, 2, 3, 4];
+let brr = arr.reduce((acc, val)=>{
+    console.log("accumulator is", acc, "and value is ", val);
+    return acc+val;
 });
-console.log(arr);
-
+console.log(brr);
